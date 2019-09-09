@@ -1,0 +1,13 @@
+
+<fieldset>Add Movie list </fieldset>
+<hr color="red">
+<form [formGroup]="registerForm">
+    <p>MovieName: </p>
+    <input type="text" id="name" formControlName="moviename" />
+    <p>Language:</p>
+    <input type="text" id="pass" formControlName="movielang" />
+    <p>Genre:</p>
+    <input type="text" id="cpass" formControlName="gener"><br><br>
+    <button (click)="check12(registerForm.value)">save</button>&nbsp;
+    <button (cilck)="log()">cancel</button>  
+</form>

@@ -1,0 +1,13 @@
+<fieldset>Login page</fieldset>
+<hr color="red">
+<form [formGroup]="registerForm2">
+    <p>UserName: </p>
+    <input type="text" id="name" formControlName="name" />
+    <p>Password:</p>
+    <input type="password" id="pass" formControlName="pass" /><br><br>
+
+    <button (click)="check(registerForm2.value)">login</button>
+   
+    
+</form>
+
